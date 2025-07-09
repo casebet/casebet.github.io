@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CaseBet</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000f8a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      height: 200px;
+      background-color: #000f8a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cb-logo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 60px;
+    }
+
+    .ct-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 180px;
+    }
+
+    .t-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 180px;
+    }
+
+    .casebet-logo {
+      height: 80px;
+    }
+
+    .user-panel {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .user-info {
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .divider {
+      border: none;
+      height: 3px;
+      background-color: white;
+      margin: 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin: 20px 0;
+    }
+
+    .case-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .case {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .case img {
+      width: 150px;
+      height: auto;
+    }
+
+    .support-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/cb.png" class="cb-logo" alt="CB" />
+    <img src="images/t_ct.png" class="ct-img" alt="CT" />
+    <img src="images/casebet.png" class="casebet-logo" alt="CASEBET" />
+    <img src="images/t_t.png" class="t-img" alt="T" />
+
+    <div class="user-panel">
+      <img src="images/avatar.png" class="avatar" alt="Аватар" />
+      <div class="user-info">
+        <p>имя: username</p>
+        <p>баланс: <b>1000₽</b></p>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider" />
+
+  <main>
+    <h2 class="section-title">кейсы</h2>
+    <div class="case-container">
+      <div class="case">
+        <img src="images/10lvlcase.png" alt="Кейс 10 лвл" />
+        <p>800₽</p>
+      </div>
+    </div>
+  </main>
+
+  <button class="support-button">тех.поддержка</button>
+</body>
+</html>
